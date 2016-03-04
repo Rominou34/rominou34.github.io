@@ -1,0 +1,10 @@
+/* Typical CSS initialization bullshit */
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+html, body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
