@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300);
+
 /* Typical CSS initialization bullshit */
 html, body {
   width: 100%;
@@ -10,13 +14,40 @@ html, body, p, h1, h2, h3, h4, h5, h6 {
   padding: 0px;
 }
 
+* {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*----- ELEMENT RULES -----*/
+
+h2 {
+  font-family: Josefin Sans;
+  font-weight: 300;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-size: 28px;
+}
+
+p {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+  font-size: 20px;
+  font-family: Roboto;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+
 /*----- ID RULES -----*/
 
 #header-title {
-  font-family: Arial;
+  font-family: Ubuntu;
   width: 100%;
-  margin: 20px 0px;
-  font-size: 36px;
+  margin: 40px 0px;
+  margin-bottom: 80px;
+  font-size: 48px;
   text-align: center;
 }
 
@@ -28,6 +59,8 @@ html, body, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 4px 1px #1d1d1d;
   box-shadow: 0px 0px 4px 1px #1d1d1d;
-  margin: 20px auto;
+  margin: 50px auto;
   display: block;
 }
+
+/*----- CLASS RULES -----*/
