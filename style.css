@@ -33,6 +33,7 @@ h1 {
   margin: 20px auto;
   font-size: 40px;
 }
+
 h2 {
   font-family: Josefin Sans;
   font-weight: 300;
@@ -40,6 +41,18 @@ h2 {
   max-width: 1000px;
   margin: 20px auto;
   font-size: 32px;
+}
+
+h3 {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-size: 24px;
+  margin-left: 40px;
+  padding-left: 4px;
+  border-left: 2px solid #3498db;
 }
 
 p {
@@ -50,6 +63,10 @@ p {
   font-family: Roboto;
   box-sizing: border-box;
   padding-left: 40px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*----- ID RULES -----*/
@@ -76,7 +93,6 @@ p {
 
 #contact a {
   color: #232323;
-  text-decoration: none;
   flex-grow: 1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -109,5 +125,19 @@ p {
 #contact a span.icon {
   font-size: 40px;
 }
+
+/*- SKILLS -*/
+
+#html { color: #c0392b; }
+#css { color: #d35400; }
+#javascript { color: #f39c12; }
+#php { color: #493b9c; }
+#sql { color: #3352a2; }
+
+#meteor { color: #e74c3c; border-bottom: 2px dashed #e74c3c; }
+#meteor:hover { color: #e68a81; border-bottom: 2px dashed #e68a81; }
+
+#react { color: #49a6bf; border-bottom: 2px dashed #49a6bf; }
+#react:hover { color: #7db0be; border-bottom: 2px dashed #7db0be; }
 
 /*----- CLASS RULES -----*/
