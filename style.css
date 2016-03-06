@@ -21,13 +21,21 @@ html, body, p, h1, h2, h3, h4, h5, h6 {
 
 /*----- ELEMENT RULES -----*/
 
+h1 {
+  font-family: Josefin Sans;
+  font-weight: 300;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-size: 40px;
+}
 h2 {
   font-family: Josefin Sans;
   font-weight: 300;
   width: 100%;
   max-width: 1000px;
   margin: 20px auto;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 p {
@@ -42,20 +50,11 @@ p {
 
 /*----- ID RULES -----*/
 
-#header-title {
-  font-family: Ubuntu;
-  width: 100%;
-  margin: 40px 0px;
-  margin-bottom: 80px;
-  font-size: 48px;
-  text-align: center;
-}
-
 #profile-pic {
   width: 50vw;
   height: 50vw;
-  max-width: 270px;
-  max-height: 270px;
+  max-width: 180px;
+  max-height: 180px;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 4px 1px #1d1d1d;
   box-shadow: 0px 0px 4px 1px #1d1d1d;
