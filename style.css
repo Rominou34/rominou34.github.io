@@ -50,9 +50,18 @@ h3 {
   max-width: 1000px;
   margin: 20px auto;
   font-size: 24px;
-  margin-left: 40px;
-  padding-left: 4px;
-  border-left: 2px solid #3498db;
+  padding-left: 40px;
+}
+
+h3::before {
+  width: 40px;
+  content: '';
+  height: 24px;
+  background-color: red;
+  width: 0px;
+  display: inline-block;
+  border-right: 2px solid #3498db;
+  margin-right: 6px;
 }
 
 p {
