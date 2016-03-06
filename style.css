@@ -54,7 +54,6 @@ h3 {
 }
 
 h3::before {
-  width: 40px;
   content: '';
   height: 24px;
   width: 0px;
@@ -75,6 +74,11 @@ div {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 20px;
 }
 
 /*----- ID RULES -----*/
@@ -148,4 +152,33 @@ a {
 #react { color: #49a6bf; border-bottom: 2px dashed #49a6bf; }
 #react:hover { color: #7db0be; border-bottom: 2px dashed #7db0be; }
 
+
+/*- PROJECTS -*/
+
+#projects span:nth-child(1) {
+  font-size: 22px;
+  font-family: Ubuntu;
+}
+
+#projects span:nth-child(1)::after {
+  width: 80px;
+  height: 2px;
+  background-color: #265796;
+  display: block;
+  content: '';
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+
+#projects p {
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+#projects a {
+  padding-left: 20px;
+  color: #3776b0;
+  margin-bottom: 40px;
+  display: block;
+}
 /*----- CLASS RULES -----*/
