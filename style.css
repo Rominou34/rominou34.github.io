@@ -12,8 +12,9 @@
 /* Typical CSS initialization bullshit */
 html, body {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   background-color: #ecf0f1;
+  color: #212121;
 }
 
 html, body, p, h1, h2, h3, h4, h5, h6 {
@@ -24,6 +25,11 @@ html, body, p, h1, h2, h3, h4, h5, h6 {
 
 
 /*----- ELEMENT RULES -----*/
+
+h1, h2, h3 {
+  animation: fadein 0.75s 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
 
 h1 {
   font-family: Josefin Sans;
@@ -41,28 +47,24 @@ h2 {
   max-width: 1000px;
   margin: 20px auto;
   font-size: 32px;
+  box-sizing: border-box;
+  padding-left: 4px;
 }
 
 h3 {
   font-family: Josefin Sans;
   font-weight: 400;
-  width: 100%;
+  width: 75%;
   max-width: 1000px;
   margin: 20px auto;
   font-size: 24px;
-  padding-left: 40px;
+  margin-left: 25px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  border-left: 2px solid #3498db;
 }
 
-h3::before {
-  content: '';
-  height: 24px;
-  width: 0px;
-  display: inline-block;
-  border-right: 2px solid #3498db;
-  margin-right: 6px;
-}
-
-div {
+div:not(#contact){
   width: 100%;
   max-width: 1000px;
   margin: 10px auto;
@@ -70,6 +72,8 @@ div {
   font-family: Roboto;
   box-sizing: border-box;
   padding-left: 40px;
+  animation: appearD 1s 0.4s ease-in-out;
+  animation-fill-mode: both;
 }
 
 a {
@@ -93,25 +97,27 @@ li {
   box-shadow: 0px 0px 4px 1px #1d1d1d;
   margin: 50px auto;
   display: block;
+  animation: appear 1.5s 0.5s ease-in-out;
+  animation-fill-mode: both;
 }
 
 /*- CONTACT -*/
 #contact {
   display: flex;
-  width: 80%;
+  width: 95%;
   max-width: 800px;
   margin: 20px auto;
 }
 
 #contact a {
-  color: #232323;
+  color: #424242;
   flex-grow: 1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 #contact a.disabled {
-  color: #6d6d6d;
+  color: #757575;
 }
 
 #contact a.disabled:hover {
@@ -130,7 +136,7 @@ li {
 }
 
 #contact a span:not([class="icon"]) {
-  font-size: 18px;
+  font-size: 14px;
   font-family: Ubuntu;
 }
 
@@ -142,7 +148,7 @@ li {
 
 #html { color: #c0392b; }
 #css { color: #d35400; }
-#javascript { color: #f39c12; }
+#javascript, #javascript-bis { color: #f39c12; }
 #php { color: #493b9c; }
 #sql { color: #3352a2; }
 
@@ -181,4 +187,72 @@ li {
   margin-bottom: 40px;
   display: block;
 }
+
 /*----- CLASS RULES -----*/
+
+/* SWEET ANIMATIONS BABY */
+
+#contact a:nth-child(1) {
+  animation: plop 0.4s 0.3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+#contact a:nth-child(2) {
+  animation: plop 0.4s 0.4s ease-in-out;
+  animation-fill-mode: both;
+}
+
+#contact a:nth-child(3) {
+  animation: plop 0.4s 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+#contact a:nth-child(4) {
+  animation: plop 0.4s 0.6s ease-in-out;
+  animation-fill-mode: both;
+}
+
+#contact a:nth-child(5) {
+  animation: plop 0.4s 0.7s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes appear {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@-webkit-keyframes appear {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@keyframes appearD {
+	0%{transform:scale(1.2,1.2);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@-webkit-keyframes appearD {
+	0%{transform:scale(1.2,1.2);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@keyframes plop {
+	0%{transform:scale(0.01,0.01);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@-webkit-keyframes plop {
+	0%{transform:scale(0.01,0.01);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@keyframes fadein {
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes fadein {
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
