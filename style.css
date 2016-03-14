@@ -54,14 +54,21 @@ h2 {
 h3 {
   font-family: Josefin Sans;
   font-weight: 400;
-  width: 75%;
+  width: calc(100% - 10px);
   max-width: 1000px;
   margin: 20px auto;
   font-size: 24px;
-  margin-left: 25px;
-  padding-left: 5px;
+  padding-left: 30px;
   box-sizing: border-box;
-  border-left: 2px solid #3498db;
+}
+
+h3::before {
+  content: '';
+  height: 24px;
+  width: 0px;
+  display: inline-block;
+  border-right: 2px solid #3498db;
+  margin-right: 6px;
 }
 
 div:not(#contact){
