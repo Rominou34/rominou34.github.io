@@ -224,6 +224,12 @@ li {
   animation-fill-mode: both;
 }
 
+#contact a:nth-child(6) {
+  animation: plop 0.4s 0.8s ease-in-out;
+  animation-fill-mode: both;
+}
+
+
 @keyframes appear {
 	0%{transform:scale(1.3,1.3);opacity:0;}
 	100%{transform:scale(1,1);opacity:1;}
